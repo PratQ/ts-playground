@@ -178,9 +178,16 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
         ├── 18_ReverseArray.ts
         ├── 19_LengthOfString.ts
         ├── 20_ToUpperCase.ts
-        └── 21_ToLowerCase.ts
+        ├── 21_ToLowerCase.ts
+        ├── 22_CharAtIndex.ts
+        ├── 23_IndexOf.ts
+        ├── 24_CheckIfStringHasWord.ts
+        ├── 25_StringStartWith.ts
+        ├── 26_StringEndsWith.ts
+        ├── 27_ReplaceString.ts
+        └── 28_SplitAndTrimString.ts
 
-30 directories, 139 files
+30 directories, 146 files
 ```
 </details>
 
@@ -213,6 +220,6 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
     ├── 9_Break
     └── 10_Array
 
-30 directories, 139 files
+30 directories, 146 files
 ```
 <!-- END_TREE -->
