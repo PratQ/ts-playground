@@ -113,8 +113,14 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
 │   ├── 15_ReadOnlyOptionalPropertiesAndOverloading
 │   │   ├── 1_Student.ts
 │   │   └── 2_Overloading.ts
-│   └── 16_Inheritance
-│       └── 1_Inheritance.ts
+│   ├── 16_Inheritance
+│   │   ├── 1_Inheritance.ts
+│   │   ├── 2_Super.ts
+│   │   └── 3_AccessModifiers.ts
+│   └── 17_Interface
+│       ├── 1_Interface.ts
+│       ├── 2_Modules.ts
+│       └── 3_Main.ts
 └── 2_Interview_Programs
     ├── 1_if
     │   ├── 1_CharCase.ts
@@ -192,7 +198,7 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
         ├── 27_ReplaceString.ts
         └── 28_SplitAndTrimString.ts
 
-32 directories, 149 files
+33 directories, 154 files
 ```
 </details>
 
@@ -214,7 +220,8 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
 │   ├── 13_String
 │   ├── 14_Objects
 │   ├── 15_ReadOnlyOptionalPropertiesAndOverloading
-│   └── 16_Inheritance
+│   ├── 16_Inheritance
+│   └── 17_Interface
 └── 2_Interview_Programs
     ├── 1_if
     ├── 2_IfElse
@@ -227,6 +234,6 @@ Welcome to my TypeScript playground! This repository tracks my progress as I wor
     ├── 9_Break
     └── 10_Array
 
-32 directories, 149 files
+33 directories, 154 files
 ```
 <!-- END_TREE -->
