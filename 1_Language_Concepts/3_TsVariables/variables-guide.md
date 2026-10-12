@@ -96,6 +96,11 @@ const f;        // ❌ Error: Missing initializer in 'const' declaration
 const g = 60;    // ✅ Works — value assigned immediately
 ```
 
+### Why does `const` require a value immediately, while `let` doesn't?
+
+- `const` means the variable can **never be reassigned** after its initial value. If TypeScript allowed `const f;` with no value, `f` would be permanently stuck as `undefined` forever — there'd be no later line where it could ever receive a real value, since reassignment is exactly what `const` forbids.
+- `let`, by contrast, is allowed to start without a value precisely because it **can** be assigned later — declaring it empty and filling it in afterward is a normal, valid pattern.
+
 ---
 
 ## 5. Variables — Re-declaration
@@ -166,7 +171,7 @@ flowchart LR
 - `user.name = "Bob"` reaches **through** the reference and changes data at that address — the variable itself never moves.
 - `user = { name: "Charlie" }` tries to make `user` point to a **new** address — that's a change to the binding, which `const` blocks.
 
-**Key distinction (important at senior level):** `const` gives **reference immutability**, not **value immutability**. For genuinely immutable data:
+**Key distinction:** `const` gives **reference immutability**, not **value immutability**. For genuinely immutable data:
 - `Object.freeze(obj)` — prevents adding/removing/reassigning top-level properties, but it's **shallow**: a nested object inside remains fully mutable unless frozen recursively.
 - TypeScript's `readonly` on interface/type properties — a **compile-time only** guarantee; it doesn't exist at runtime and can be bypassed with a type assertion.
 - `readonly T[]` / `ReadonlyArray<T>` — blocks mutating array methods, also compile-time only.
